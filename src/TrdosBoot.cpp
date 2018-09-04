@@ -3,8 +3,8 @@
 // Author      : Aleksandr Yanovskiy
 // Version     : 1.00
 // Copyright   : GPLv3
-// Description : Find and rename Basic falie in TRD or SCL files to boot.B
-// 				 for autoran them in tr-dos Zx Spectrum
+// Description : Find and rename Basic faile in TRD or SCL files to boot.B
+// 				 for autorun them in tr-dos Zx Spectrum
 //
 // www.zx-modules.de
 //

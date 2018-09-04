@@ -6,4 +6,11 @@ Most image files (scl, trd) contain one basic file, that not called "boot.B", wh
 ## Compile
 Go to in make folder, and  
 `make`  
-The programm is compiled in Debian and Cygwin.
+The programm is compiled in Debian and Cygwin.  
+
+## Example use:  
+process one TRD file:  
+`./TrDosBoot DISK.trd`  
+
+process all SCL files in current directory:  
+`./TrDosBoot scl`

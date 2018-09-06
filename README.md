@@ -13,4 +13,4 @@ process one TRD file:
 `./TrDosBoot DISK.trd`  
 
 process all SCL files in current directory:  
-`./TrDosBoot scl`
+`./TrDosBoot *.scl`

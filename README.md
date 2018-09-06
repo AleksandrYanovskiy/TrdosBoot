@@ -16,4 +16,4 @@ process one TRD file:
 process all SCL files in /media/usb0/ directory:  
 `./TrDosBoot /media/usb0/*.scl`
 
-The file extension is case insensitive must be SCL or TRD and mandatory.
+The file extension is case insensitive, must be SCL or TRD and mandatory.

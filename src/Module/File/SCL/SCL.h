@@ -37,8 +37,7 @@ private:
 	strDataSignature strDataSignature_;
 	strDataDirectory strDataDirectory_;
 
-	const char labelSCL_[9];
-
+	const char* labelSCL_;
 };
 
 } /* namespace graf */

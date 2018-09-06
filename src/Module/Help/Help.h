@@ -14,7 +14,7 @@ namespace graf {
 
 class Help {
 public:
-	static void show(const char* ProgName);
+	static void show(const char* ProgName, bool error);
 };
 
 } /* namespace graf */

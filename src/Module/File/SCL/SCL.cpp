@@ -68,7 +68,6 @@ void SCL::rename() {
 				oldTrdosName_ += strDataDirectory_.fileName[k];
 				strDataDirectory_.fileName[k] = nameBoot_[k];
 			}
-			//oldTrdosName_ += '.B';
 
 			//write changes
 			write(strHeadData_, strHeadData_.start  + (strHeadData_.size * i));

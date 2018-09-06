@@ -12,6 +12,7 @@ RM := rm -rf
 -include src/Module/Help/subdir.mk
 -include src/Module/File/TRD/subdir.mk
 -include src/Module/File/SCL/subdir.mk
+-include src/Module/File/BAD/subdir.mk
 -include src/Module/File/subdir.mk
 -include src/subdir.mk
 -include subdir.mk

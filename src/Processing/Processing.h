@@ -18,13 +18,15 @@
 #include "../Module/File/File.h"
 #include "../Module/File/SCL/SCL.h"
 #include "../Module/File/TRD/TRD.h"
+#include "../Module/File/BAD/BAD.h"
 
+#include <stdexcept>
 
 namespace graf {
 
 class Processing {
 public:
-	static void run(std::string fileName);
+	static void run(char* filePath);
 
 protected:
 	template<typename T>
@@ -36,6 +38,7 @@ protected:
 	template<typename T>
 	static void logt(T msg, char adj = 0, int tab = 16);
 
+	static std::string getDirName(std::string fileName);
 	static std::string getFileName(std::string fileName);
 	static std::string getFileExt(std::string fileName);
 	static std::string upperCase(std::string lowerString);

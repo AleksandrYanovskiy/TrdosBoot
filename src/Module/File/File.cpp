@@ -11,7 +11,7 @@ namespace graf {
 
 File::File(std::string fileName): fileName_(fileName),
   	  	          	  	  	  	  oldTrdosName_(""),
-								  nameBoot_("boot    ") {
+								  nameBoot_("boot    B") {
 
 
 }
@@ -84,7 +84,7 @@ bool File::compareName(const char* firstName, const char* secondName, unsigned i
 
 
 std::string File::getOldName() {
-	return oldTrdosName_;
+	return oldTrdosName_ + ".B";
 }
 
 } /* namespace graf */

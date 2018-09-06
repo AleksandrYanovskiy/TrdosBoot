@@ -28,5 +28,6 @@ src/Processing \
 src/Module/Help \
 src/Module/File/TRD \
 src/Module/File/SCL \
+src/Module/File/BAD \
 src/Module/File \
 

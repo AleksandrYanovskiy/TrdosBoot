@@ -15,16 +15,11 @@ namespace graf {
  * filename - single file
  *
  */
-//void Processing::run(std::string fileName) {
 void Processing::run(char* filePath) {
 
 	std::string upperFileName;
 	std::string upperFileExt;
 	std::string dirName;
-
-
-	//std::cout << "File path: " << filePath << std::endl;
-
 
 	//get file name
 	upperFileName = upperCase(getFileName(filePath));
@@ -32,12 +27,8 @@ void Processing::run(char* filePath) {
 	if ( upperFileName.empty() )
 		throw std::runtime_error("The file name must be specified!");
 
-	//std::cout << "upper file name: " << upperFileName << std::endl;
-
 	//get extension
 	upperFileExt = upperCase(getFileExt(filePath));
-
-	//std::cout << "Upper file ext: " << upperFileExt << std::endl;
 
 	if ( (upperFileExt != "SCL") && (upperFileExt != "TRD") ) {
 		throw std::runtime_error("File extension must be SCL or TRD!");
@@ -46,8 +37,6 @@ void Processing::run(char* filePath) {
 	dirName = getDirName(filePath);
 	if (dirName.empty())
 		dirName = "./";
-
-	//std::cout << "Dir name: " << dirName << std::endl;
 
 	DIR* pDir;
 	struct dirent* entry;
@@ -61,8 +50,6 @@ void Processing::run(char* filePath) {
 	if ( (pDir = opendir(dirName.c_str())) != NULL ) {
 		logln("Processing...");
 		while ( (entry = readdir(pDir)) != NULL ) {
-
-			//std::cout << "entry->d_name=" << entry->d_name << std::endl;
 
 			 if( ((strcmp(entry->d_name, ".") == 0) || (strcmp(entry->d_name, "..") == 0)) || (entry->d_type == DT_DIR) ) {
 				 continue;
@@ -130,9 +117,6 @@ std::string Processing::getDirName(std::string fileName) {
 std::string Processing::getFileName(std::string fileName) {
 	std::size_t foundDelem = fileName.find_last_of('/') + 1;
 	std::size_t foundDote = fileName.find_last_of('.');
-
-	//std::cout << "foundDelem = " << foundDelem << std::endl;
-	//std::cout << "foundDote = " << foundDote << std::endl;
 
 	std::string cRes = fileName.substr(foundDelem, foundDote - foundDelem );
 

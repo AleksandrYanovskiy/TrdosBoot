@@ -10,6 +10,8 @@
 
 #include <iostream>
 #include <fstream>
+#include <stdexcept>
+#include <string.h>
 
 
 namespace graf {
@@ -38,7 +40,8 @@ protected:
 	strctHeadData strHeadData_;
 	std::string fileName_;
 	std::string oldTrdosName_;
-	const char nameBoot_[9];
+	const char* nameBoot_;
+
 	void read(strctHeadData& strHeadData, int position = 0);
 	void write(strctHeadData& strHeadData, int position = 0);
 	bool compareUppName(const char* firstName, const char* secondName, unsigned int sizeName);

@@ -10,8 +10,8 @@
 namespace graf {
 
 File::File(std::string fileName): fileName_(fileName),
-  	  	          	  	  	  	  oldTrdosName_(""),
-								  nameBoot_("boot    B") {
+  	  	          	  	  	  	oldTrdosName_(""),
+							nameBoot_("boot    B") {
 
 
 }
